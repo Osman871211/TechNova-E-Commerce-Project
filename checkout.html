@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout - Complete your shipping details and select payment method to place your TechNova order.">
+  <title>Checkout - TechNova Store</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+      </a>
+
+      <div class="header-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="header-search-input" placeholder="Search product..." autocomplete="off">
+        <div id="search-dropdown" class="search-results-dropdown"></div>
+      </div>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a href="cart.html" class="icon-btn" title="View Shopping Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+
+        <a href="login.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-user"></i> Login
+        </a>
+
+        <div id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+        <a href="cart.html">Cart</a>
+        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+        <span>Checkout</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MAIN CONTENT -->
+  <main class="container section-padding" style="padding-top: 0;">
+    <form id="checkout-form" class="checkout-layout">
+
+      <!-- Left Column: Shipping & Payment Details -->
+      <div>
+        <!-- Shipping Address Form -->
+        <div class="form-card">
+          <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fas fa-truck" style="color: var(--primary);"></i> Shipping Address</h2>
+          
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="checkout-fullname">Full Name *</label>
+              <input type="text" id="checkout-fullname" class="form-control" placeholder="e.g. John Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-email">Email Address *</label>
+              <input type="email" id="checkout-email" class="form-control" placeholder="john@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-phone">Phone Number *</label>
+              <input type="tel" id="checkout-phone" class="form-control" placeholder="+1 (555) 000-0000">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="checkout-address">Street Address *</label>
+              <input type="text" id="checkout-address" class="form-control" placeholder="123 Tech Street, Apt 4B">
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-city">City *</label>
+              <input type="text" id="checkout-city" class="form-control" placeholder="New York">
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-zip">ZIP / Postal Code *</label>
+              <input type="text" id="checkout-zip" class="form-control" placeholder="10001">
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Method Options -->
+        <div class="form-card">
+          <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem;"><i class="fas fa-credit-card" style="color: var(--primary);"></i> Payment Method</h2>
+          
+          <div class="payment-options">
+            <label class="payment-option active">
+              <input type="radio" id="pay-card" value="card" checked>
+              <i class="fas fa-credit-card" style="font-size: 1.25rem; color: var(--primary);"></i>
+              <div>
+                <strong style="display: block;">Credit / Debit Card</strong>
+                <small style="color: var(--text-muted);">Visa, MasterCard, American Express</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" id="pay-cod" value="cod">
+              <i class="fas fa-money-bill-wave" style="font-size: 1.25rem; color: var(--success);"></i>
+              <div>
+                <strong style="display: block;">Cash on Delivery (COD)</strong>
+                <small style="color: var(--text-muted);">Pay upon door delivery</small>
+              </div>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" id="pay-mobile" value="mobile">
+              <i class="fas fa-mobile-alt" style="font-size: 1.25rem; color: var(--accent);"></i>
+              <div>
+                <strong style="display: block;">Mobile Banking / Wallet</strong>
+                <small style="color: var(--text-muted);">Apple Pay, Google Pay, PayPal</small>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Order Summary Preview -->
+      <aside class="order-summary-card">
+        <h3 style="margin-bottom: 1.25rem;">Order Review</h3>
+        
+        <div id="checkout-items-list" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+          <!-- Dynamically populated or item review -->
+          <div class="summary-row">
+            <span>Items Subtotal</span>
+            <span id="checkout-subtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="checkout-shipping">FREE</span>
+          </div>
+          <div class="summary-row">
+            <span>Estimated Tax (5%)</span>
+            <span id="checkout-tax">$0.00</span>
+          </div>
+          <div class="summary-row total">
+            <span>Order Total</span>
+            <span id="checkout-total">$0.00</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          <i class="fas fa-lock"></i> Place Order Now
+        </button>
+
+        <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">
+          <i class="fas fa-shield-alt" style="color: var(--success);"></i> 256-Bit SSL Encrypted & Secure Checkout
+        </p>
+      </aside>
+
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+          </a>
+          <p>Your one-stop destination for cutting-edge consumer electronics, laptops, wearables, and audio gear.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=audio">Audio & Headphones</a></li>
+            <li><a href="shop.html?category=wearables">Wearable Tech</a></li>
+            <li><a href="shop.html?category=laptops">Laptops & Computing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Campus Road</li>
+            <li><i class="fas fa-phone-alt"></i> +1 (800) 555-NOVA</li>
+            <li><i class="fas fa-envelope"></i> support@technovastore.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechNova E-Commerce Store. All Rights Reserved.</p>
+        <span class="diploma-tag"><i class="fas fa-graduation-cap"></i> Diploma Student Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-top-btn" class="scroll-top-btn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+
+</body>
+</html>

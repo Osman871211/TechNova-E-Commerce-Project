@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About TechNova - Our mission, team, and story as a modern diploma student web development project.">
+  <title>About Us - TechNova Store</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+      </a>
+
+      <div class="header-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="header-search-input" placeholder="Search product..." autocomplete="off">
+        <div id="search-dropdown" class="search-results-dropdown"></div>
+      </div>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a href="cart.html" class="icon-btn" title="View Shopping Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+
+        <a href="login.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-user"></i> Login
+        </a>
+
+        <div id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="page-header">
+    <div class="container">
+      <h1>About TechNova</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+        <span>About Us</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT CONTENT SECTION -->
+  <main class="container section-padding" style="padding-top: 0;">
+    
+    <!-- Hero / Story -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+      <div>
+        <span class="slide-tag" style="margin-bottom: 0.75rem;">Our Mission</span>
+        <h2 style="font-size: 2.25rem; margin-bottom: 1.25rem;">Revolutionizing Online Tech Shopping</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
+          TechNova was founded with a clear goal: to make premium consumer electronics, high-performance laptops, and audio gear accessible, affordable, and seamless to purchase online.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+          Designed with semantic HTML5, modular CSS3, and modern Vanilla JavaScript, this platform serves as a benchmark for student excellence in web design and front-end engineering.
+        </p>
+      </div>
+
+      <div style="text-align: center;">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='350' viewBox='0 0 500 350'><rect width='500' height='350' fill='%233b82f6' fill-opacity='0.1' rx='20'/><circle cx='250' cy='150' r='60' fill='%233b82f6' fill-opacity='0.2'/><text x='50%' y='50%' font-family='Outfit' font-size='28' font-weight='bold' fill='%233b82f6' text-anchor='middle'>TechNova Innovation</text></svg>" alt="About TechNova" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+      </div>
+    </div>
+
+    <!-- Key Perks Grid -->
+    <div class="categories-grid" style="margin-bottom: 4rem;">
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-shipping-fast"></i></div>
+        <h3>Free Express Shipping</h3>
+        <span>On orders over $150</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>1-Year Warranty</h3>
+        <span>100% Guaranteed authentic</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-headset"></i></div>
+        <h3>24/7 Tech Support</h3>
+        <span>Always ready to assist</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-undo-alt"></i></div>
+        <h3>30-Day Easy Returns</h3>
+        <span>Hassle-free refund policy</span>
+      </div>
+    </div>
+
+    <!-- Diploma Project Info Card -->
+    <div style="background: linear-gradient(135deg, var(--bg-surface) 0%, var(--primary-light) 100%); border: 1px solid var(--primary); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; margin-bottom: 4rem;">
+      <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+      <h2 style="font-size: 2rem; margin-bottom: 0.75rem;">Diploma Student Project Showcase</h2>
+      <p style="max-width: 680px; margin: 0 auto 1.5rem auto; color: var(--text-muted); font-size: 1.05rem;">
+        This project has been built strictly adhering to modern clean web development standards using pure HTML5, CSS3, and ES6 JavaScript. Designed for high performance, accessibility, and future backend integration (PHP / Laravel / Node.js).
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <span class="badge badge-new" style="font-size: 0.9rem; padding: 0.4rem 1rem;">HTML5 Semantic</span>
+        <span class="badge badge-sale" style="font-size: 0.9rem; padding: 0.4rem 1rem; background-color: var(--primary);">CSS3 Flex & Grid</span>
+        <span class="badge badge-new" style="font-size: 0.9rem; padding: 0.4rem 1rem; background-color: var(--secondary);">Vanilla JS (ES6)</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+          </a>
+          <p>Your one-stop destination for cutting-edge consumer electronics, laptops, wearables, and audio gear.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=audio">Audio & Headphones</a></li>
+            <li><a href="shop.html?category=wearables">Wearable Tech</a></li>
+            <li><a href="shop.html?category=laptops">Laptops & Computing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Campus Road</li>
+            <li><i class="fas fa-phone-alt"></i> +1 (800) 555-NOVA</li>
+            <li><i class="fas fa-envelope"></i> support@technovastore.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechNova E-Commerce Store. All Rights Reserved.</p>
+        <span class="diploma-tag"><i class="fas fa-graduation-cap"></i> Diploma Student Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-top-btn" class="scroll-top-btn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+
+</body>
+</html>

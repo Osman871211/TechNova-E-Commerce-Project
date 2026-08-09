@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechNova - Modern E-Commerce Platform for Next-Gen Tech & Electronics. Diploma Student Project.">
+  <title>TechNova - Modern E-Commerce Store</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+      </a>
+
+      <!-- Search Box -->
+      <div class="header-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="header-search-input" placeholder="Search tech, audio, gadgets..." autocomplete="off">
+        <div id="search-dropdown" class="search-results-dropdown"></div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav id="nav-menu" class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Icons -->
+      <div class="header-actions">
+        <!-- Dark Mode Toggle Button -->
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Shopping Cart Icon -->
+        <a href="cart.html" class="icon-btn" title="View Shopping Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+
+        <!-- Login / Register Button -->
+        <a href="login.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-user"></i> Login
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <div id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+    <!-- HERO SLIDER SECTION -->
+    <section class="container">
+      <div class="hero-slider">
+        <div id="hero-slider-container" class="slider-container">
+          
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="slide-content">
+              <span class="slide-tag">Featured Deal</span>
+              <h1 class="slide-title">Next-Gen Audio Experience</h1>
+              <p class="slide-description">Discover crystal clear sound with NovaBuds Pro featuring Active Noise Cancellation & 32-hour battery life.</p>
+              <a href="product.html?id=1" class="btn btn-primary btn-lg">Shop Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="slide-image">
+              <img src="images/earbuds.png" alt="NovaBuds Pro">
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="slide-content">
+              <span class="slide-tag">New Arrival</span>
+              <h1 class="slide-title">Smart Watch Series 8</h1>
+              <p class="slide-description">Monitor your fitness, ECG, and sleep tracking in real time with high durability aluminium casing.</p>
+              <a href="product.html?id=2" class="btn btn-primary btn-lg">Explore Watch <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="slide-image">
+              <img src="images/smartwatch.png" alt="UltraWatch Series 8">
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="slide-content">
+              <span class="slide-tag">Special Discount</span>
+              <h1 class="slide-title">Ultra-Slim AeroLap Pro 15</h1>
+              <p class="slide-description">Powerful 12th Gen performance packed inside a sleek 1.2kg lightweight chassis. Perfect for students and creators.</p>
+              <a href="product.html?id=3" class="btn btn-primary btn-lg">View Laptop <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="slide-image">
+              <img src="images/laptop.png" alt="AeroLap Pro">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <button id="slider-prev" class="slider-prev" title="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+        <button id="slider-next" class="slider-next" title="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+        <!-- Carousel Pagination Dots -->
+        <div id="slider-dots" class="slider-dots"></div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="container section-padding">
+      <div class="section-title">
+        <h2>Browse Categories</h2>
+        <p>Explore top rated products curated for your daily lifestyle</p>
+      </div>
+
+      <div class="categories-grid">
+        <a href="shop.html?category=audio" class="category-card">
+          <div class="category-icon"><i class="fas fa-headphones-alt"></i></div>
+          <h3>Audio & Sound</h3>
+          <span>18+ Products</span>
+        </a>
+
+        <a href="shop.html?category=wearables" class="category-card">
+          <div class="category-icon"><i class="fas fa-clock"></i></div>
+          <h3>Wearable Tech</h3>
+          <span>12+ Products</span>
+        </a>
+
+        <a href="shop.html?category=laptops" class="category-card">
+          <div class="category-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Laptops & Computing</h3>
+          <span>25+ Products</span>
+        </a>
+
+        <a href="shop.html?category=electronics" class="category-card">
+          <div class="category-icon"><i class="fas fa-tv"></i></div>
+          <h3>Electronics</h3>
+          <span>30+ Products</span>
+        </a>
+
+        <a href="shop.html?category=accessories" class="category-card">
+          <div class="category-icon"><i class="fas fa-keyboard"></i></div>
+          <h3>Gaming & Accessories</h3>
+          <span>40+ Products</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section class="container section-padding">
+      <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Handpicked electronics with top customer reviews</p>
+      </div>
+
+      <div class="products-grid" id="homepage-featured-grid">
+        <!-- Rendered dynamically by script or initial markup -->
+        <div class="product-card">
+          <span class="badge badge-sale product-badge">Sale</span>
+          <div class="product-thumb">
+            <img src="images/earbuds.png" alt="NovaBuds Pro">
+            <div class="product-actions">
+              <button class="icon-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+              <a href="product.html?id=1" class="icon-btn" title="View Details"><i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Audio & Headphones</span>
+            <h3 class="product-title"><a href="product.html?id=1">NovaBuds Pro Wireless Earbuds</a></h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <span>4.8 (142)</span>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="current-price">$89.99</span>
+                <span class="old-price">$129.99</span>
+              </div>
+              <button class="add-cart-btn" title="Add to Cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge-new product-badge">Hot</span>
+          <div class="product-thumb">
+            <img src="images/smartwatch.png" alt="UltraWatch S8">
+            <div class="product-actions">
+              <button class="icon-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+              <a href="product.html?id=2" class="icon-btn" title="View Details"><i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Wearable Tech</span>
+            <h3 class="product-title"><a href="product.html?id=2">UltraWatch Series 8 Smartwatch</a></h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <span>4.9 (98)</span>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="current-price">$199.99</span>
+                <span class="old-price">$249.99</span>
+              </div>
+              <button class="add-cart-btn" title="Add to Cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge-new product-badge">New</span>
+          <div class="product-thumb">
+            <img src="images/laptop.png" alt="AeroLap Pro">
+            <div class="product-actions">
+              <button class="icon-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+              <a href="product.html?id=3" class="icon-btn" title="View Details"><i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Laptops & Computing</span>
+            <h3 class="product-title"><a href="product.html?id=3">AeroLap Pro 15 Ultra-Slim Laptop</a></h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <span>4.7 (64)</span>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="current-price">$1,199.00</span>
+                <span class="old-price">$1,399.00</span>
+              </div>
+              <button class="add-cart-btn" title="Add to Cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge-sale product-badge">Sale</span>
+          <div class="product-thumb">
+            <img src="images/speaker.png" alt="SoundPulse">
+            <div class="product-actions">
+              <button class="icon-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+              <a href="product.html?id=4" class="icon-btn" title="View Details"><i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Audio & Headphones</span>
+            <h3 class="product-title"><a href="product.html?id=4">SoundPulse Portable Bluetooth Speaker</a></h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <span>4.6 (210)</span>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="current-price">$49.99</span>
+                <span class="old-price">$69.99</span>
+              </div>
+              <button class="add-cart-btn" title="Add to Cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="shop.html" class="btn btn-secondary btn-lg">View All Products <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- SPECIAL OFFER BANNER -->
+    <section class="container section-padding">
+      <div class="offer-banner">
+        <div class="offer-container">
+          <div class="offer-content">
+            <span class="badge badge-sale" style="margin-bottom: 1rem;">Limited Time Deal</span>
+            <h2>Get Up To 40% Off Tech Devices</h2>
+            <p>Upgrade your home office setup with our premium mechanical keyboards, power banks, and Smart TVs before stock runs out.</p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown">
+              <div class="countdown-item">
+                <span id="count-hours" class="countdown-number">18</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-item">
+                <span id="count-mins" class="countdown-number">45</span>
+                <span class="countdown-label">Mins</span>
+              </div>
+              <div class="countdown-item">
+                <span id="count-secs" class="countdown-number">30</span>
+                <span class="countdown-label">Secs</span>
+              </div>
+            </div>
+
+            <a href="shop.html" class="btn btn-primary btn-lg" style="background-color: var(--accent); color: #000; border: none;">Claim Discount Now</a>
+          </div>
+
+          <div class="slide-image" style="text-align: center;">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'><rect width='400' height='400' fill='none'/><circle cx='200' cy='200' r='120' fill='%23f59e0b' fill-opacity='0.2'/><text x='50%' y='50%' font-family='Outfit' font-size='36' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>40% OFF</text></svg>" alt="Special Offer">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS & TESTIMONIALS -->
+    <section class="container section-padding">
+      <div class="section-title">
+        <h2>What Our Customers Say</h2>
+        <p>Real reviews from verified tech buyers worldwide</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"TechNova provided super quick delivery! The NovaBuds Pro sound crystal clear and battery lasts all day long."</p>
+          <div class="reviewer">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><circle cx='40' cy='40' r='40' fill='%233b82f6'/><text x='50%' y='55%' font-family='Outfit' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>MS</text></svg>" alt="Michael Scott">
+            <div>
+              <div class="reviewer-name">Michael Scott</div>
+              <div class="reviewer-title">Tech Enthusiast</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"The AeroLap Pro laptop build quality exceeded my expectations. Sleek, powerful, and very responsive UI on TechNova."</p>
+          <div class="reviewer">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><circle cx='40' cy='40' r='40' fill='%2310b981'/><text x='50%' y='55%' font-family='Outfit' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>EP</text></svg>" alt="Emily Parker">
+            <div>
+              <div class="reviewer-name">Emily Parker</div>
+              <div class="reviewer-title">Diploma Student</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="review-text">"Seamless checkout process and great customer support team. Highly recommend this store to everyone!"</p>
+          <div class="reviewer">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><circle cx='40' cy='40' r='40' fill='%23f59e0b'/><text x='50%' y='55%' font-family='Outfit' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>DR</text></svg>" alt="David Ray">
+            <div>
+              <div class="reviewer-name">David Ray</div>
+              <div class="reviewer-title">Software Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="container section-padding">
+      <div class="newsletter-box">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get exclusive discount coupons, product updates, and tech news straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+          </a>
+          <p>Your one-stop destination for cutting-edge consumer electronics, laptops, wearables, and audio gear.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=audio">Audio & Headphones</a></li>
+            <li><a href="shop.html?category=wearables">Wearable Tech</a></li>
+            <li><a href="shop.html?category=laptops">Laptops & Computing</a></li>
+            <li><a href="shop.html?category=electronics">Electronics</a></li>
+            <li><a href="shop.html?category=accessories">Gaming Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Campus Road, Science District</li>
+            <li><i class="fas fa-phone-alt"></i> +1 (800) 555-NOVA</li>
+            <li><i class="fas fa-envelope"></i> support@technovastore.com</li>
+            <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechNova E-Commerce Store. All Rights Reserved.</p>
+        <span class="diploma-tag"><i class="fas fa-graduation-cap"></i> Diploma Student Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <div id="scroll-top-btn" class="scroll-top-btn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+
+</body>
+</html>

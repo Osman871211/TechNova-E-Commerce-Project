@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact TechNova - Get in touch with our support team or send us your feedback.">
+  <title>Contact Us - TechNova Store</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+      </a>
+
+      <div class="header-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="header-search-input" placeholder="Search product..." autocomplete="off">
+        <div id="search-dropdown" class="search-results-dropdown"></div>
+      </div>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a href="cart.html" class="icon-btn" title="View Shopping Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+
+        <a href="login.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-user"></i> Login
+        </a>
+
+        <div id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Contact Support</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+        <span>Contact Us</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT MAIN CONTENT -->
+  <main class="container section-padding" style="padding-top: 0;">
+    
+    <!-- Contact Info Cards -->
+    <div class="categories-grid" style="margin-bottom: 3rem;">
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Visit Our Office</h3>
+        <span>123 Tech Campus Road, Science District</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-phone-alt"></i></div>
+        <h3>Call Us Direct</h3>
+        <span>+1 (800) 555-NOVA</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email Support</h3>
+        <span>support@technovastore.com</span>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fas fa-clock"></i></div>
+        <h3>Working Hours</h3>
+        <span>Mon - Sat: 9:00 AM - 8:00 PM</span>
+      </div>
+    </div>
+
+    <!-- Contact Form & Map Container -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start;">
+      
+      <!-- Contact Form -->
+      <div class="form-card">
+        <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Send Us a Message</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Fill out the form below and our support team will respond within 24 hours.</p>
+
+        <form id="contact-form">
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label for="contact-name">Your Full Name *</label>
+            <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sarah Connor">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label for="contact-email">Your Email Address *</label>
+            <input type="email" id="contact-email" class="form-control" placeholder="sarah@example.com">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Order Inquiry">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="contact-message">Your Message *</label>
+            <textarea id="contact-message" class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Stylized Interactive Map Graphic -->
+      <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center;">
+        <h3 style="margin-bottom: 1rem; font-size: 1.25rem;"><i class="fas fa-map-marked-alt" style="color: var(--primary);"></i> TechNova Campus Location</h3>
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%231e293b' rx='16'/><path d='M100 200 Q250 100 400 200 T500 300' stroke='%233b82f6' stroke-width='4' fill='none'/><circle cx='250' cy='150' r='12' fill='%23ef4444'/><circle cx='250' cy='150' r='24' fill='%23ef4444' fill-opacity='0.3'/><text x='50%' y='80%' font-family='Outfit' font-size='22' font-weight='bold' fill='white' text-anchor='middle'>TechNova Main Campus & Research Center</text></svg>" alt="Location Map" style="border-radius: var(--radius-md); width: 100%;">
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+          </a>
+          <p>Your one-stop destination for cutting-edge consumer electronics, laptops, wearables, and audio gear.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=audio">Audio & Headphones</a></li>
+            <li><a href="shop.html?category=wearables">Wearable Tech</a></li>
+            <li><a href="shop.html?category=laptops">Laptops & Computing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Campus Road</li>
+            <li><i class="fas fa-phone-alt"></i> +1 (800) 555-NOVA</li>
+            <li><i class="fas fa-envelope"></i> support@technovastore.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechNova E-Commerce Store. All Rights Reserved.</p>
+        <span class="diploma-tag"><i class="fas fa-graduation-cap"></i> Diploma Student Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-top-btn" class="scroll-top-btn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+
+</body>
+</html>

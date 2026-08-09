@@ -1,0 +1,187 @@
+/* ==========================================================================
+   TECHNOVA - RESPONSIVE STYLESHEET
+   Breakpoint Media Queries for Mobile, Tablet, Laptop, and Desktop
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Laptop & Mid-size Desktops (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .slide {
+    padding: 3rem 2rem;
+  }
+
+  .slide-title {
+    font-size: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .shop-layout {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .cart-layout, .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Tablets & Small Laptops (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 280px;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--bg-surface);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+    z-index: 999;
+    border-right: 1px solid var(--border-color);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .header-search {
+    max-width: 200px;
+  }
+
+  .slide {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .slide-content {
+    max-width: 100%;
+  }
+
+  .slide-image img {
+    max-height: 240px;
+  }
+
+  .offer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .countdown {
+    justify-content: center;
+  }
+
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-details-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .main-image {
+    height: 280px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Mobile Phones (max-width: 576px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-padding {
+    padding: 2.5rem 0;
+  }
+
+  .header-search {
+    display: none; /* Hide header search on small phones, available on shop page */
+  }
+
+  .slide-title {
+    font-size: 1.85rem;
+  }
+
+  .slide-description {
+    font-size: 0.95rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.75rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-thumb {
+    height: 170px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .countdown-item {
+    min-width: 60px;
+    padding: 0.5rem;
+  }
+
+  .countdown-number {
+    font-size: 1.4rem;
+  }
+
+  .cart-table th, .cart-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a TechNova Account - Join us for faster checkout and exclusive tech deals.">
+  <title>Register - TechNova Store</title>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+      </a>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a href="cart.html" class="icon-btn" title="View Shopping Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+
+        <div id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- AUTH WRAPPER -->
+  <main class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem;">
+          <i class="fas fa-bolt"></i> Tech<span>Nova</span>
+        </a>
+        <h2>Create an Account</h2>
+        <p>Sign up to start shopping for next-gen tech products.</p>
+      </div>
+
+      <form id="register-form">
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" class="form-control" placeholder="e.g. Alex Rivera">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" class="form-control" placeholder="alex@example.com">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" class="form-control" placeholder="Minimum 6 characters">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="reg-confirm-password">Confirm Password</label>
+          <input type="password" id="reg-confirm-password" class="form-control" placeholder="Re-enter password">
+        </div>
+
+        <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <input type="checkbox" id="terms" required style="accent-color: var(--primary); width: 16px; height: 16px; margin-top: 3px;">
+          <label for="terms" style="font-size: 0.85rem; color: var(--text-muted); cursor: pointer;">
+            I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a>.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Create Account <i class="fas fa-user-plus"></i>
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Already have an account? <a href="login.html">Log In Here</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none;">
+        <p>&copy; 2026 TechNova E-Commerce Store. All Rights Reserved.</p>
+        <span class="diploma-tag"><i class="fas fa-graduation-cap"></i> Diploma Student Project</span>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
