@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div data-importer="image" align="center">
   <img data-importer="image" height="150" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2hmZmYwZ2w4OWM5NHd5Y29wbjQ0eWVwYnk3NnB5c2JpdHI4Y2hvaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cJSDRt8csBx0A7YFfh/giphy.gif"  />
 </div>
@@ -250,7 +250,3 @@ This project was created for **educational and diploma project purposes** to dem
 
 ⭐ **If you like this project, don't forget to give it a star!** ⭐
 
-> 💙 Built with HTML, CSS & JavaScript.
-=======
-# TechNova-E-Commerce-Project
->>>>>>> 2eef321b264de7d44c29602a89cd536f88ae08e5
